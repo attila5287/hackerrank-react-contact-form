@@ -1,21 +1,54 @@
-# React + TypeScript + Vite
+# Contact Form
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[solution step 1 AT](./step1.md)
+[solution step 2 AT](./step2.md)
+[see live version on vercel](https://hackerrank-react-contact-form.vercel.app/)
 
-While this project uses React, Vite supports many popular JS frameworks. [See all the supported frameworks](https://vitejs.dev/guide/#scaffolding-your-first-vite-project).
+You need to create a simple React application called "Contact Form" that collects user information and displays it below the form upon submission. This task will help you practice handling form inputs, validation, and conditional rendering in React.
 
-## Deploy Your Own
+Detailed Requirements
+1. Form Structure:
 
-Deploy your own Vite project with Vercel.
+    The form should have the following fields:
+        Name: Text input for the user's name.
+        Email: Text input for the user's email address.
+        Message: Textarea for the user's message.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/framework-boilerplates/vite-react&template=vite-react)
+2. Form Submission:
 
-_Live Example: https://vite-react-example.vercel.app_
+    There should be a "Submit" button to submit the form.
 
-### Deploying From Your Terminal
+3. Form Validation:
 
-You can deploy your new Vite project with a single command from your terminal using [Vercel CLI](https://vercel.com/download):
+    Validate that none of the fields are empty upon submission.
+    If any field is empty, display an error message: "All fields are required." The form should not be submitted.
 
-```shell
-$ vercel
-```
+4. Displaying Submitted Data:
+
+    If the form is successfully submitted, display the entered information below the form.
+    Clear the input fields after a successful submission.
+
+
+Sample Interaction
+
+Initial State
+
+    The form is displayed with empty fields.
+    No submitted information or error messages are shown.
+
+User Action 1
+
+    User fills in all fields (Name: "John Doe", Email: "john@example.com", Message: "Hello there!").
+    User clicks the "Submit" button.
+    The entered information ("John Doe", "john@example.com", "Hello there!") is displayed below the form.
+    The input fields are cleared.
+
+User Action 2
+
+    User fills in some fields and leaves others empty.
+    User clicks the "Submit" button.
+    No information is displayed.
+    An error message "All fields are required." is shown.
+
+## [HackerRank Web Page Challenge Requirements](https://www.hackerrank.com/challenges/react-contact-form/)
+![screenshot](./public/Screenshot.jpg)
