@@ -6,8 +6,8 @@ function App() {
   const [name , setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
-  const [submitted, setSubmitted] = useState(null);
-  const [error, setError] = useState(null);
+  const [submitted, setSubmitted] = useState<{ name: string; email: string; message: string } | null>(null);
+  const [error, setError] = useState<string | null>(null);
   const handleSubmit = () => {
     const formData = {
       name: name,
